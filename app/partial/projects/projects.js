@@ -1,4 +1,82 @@
-angular.module('app').controller('ProjectsCtrl',function($scope){
+angular.module('app').controller('ProjectsCtrl',function($scope, angularGridInstance){
 
+    $scope.pics = [
+        {
+            source:'/images/buhrma.jpg'
+        },
+        {
+            source:'/images/boardgame.jpg'
+        },
+        {
+            source:'/images/game.jpg'
+        },
+        {
+            source:'/images/stringed.jpg'
+        },
+        {
+            source:'/images/hae.jpg'
+        },
+        {
+            source:'/images/poligon.jpg'
+        },
+        {
+            source:'/images/tree.jpg'
+        },
+        {
+            source:'/images/56.jpg'
+        },
+        {
+            source:'/images/pencil.jpg'
+        },
+        {
+            source:'/images/phoenix.jpg'
+        },
+        {
+            source:'/images/sac1.jpg'
+        },
+        {
+            source:'/images/sac2.jpg'
+        },
+        {
+            source:'/images/sac3.jpg'
+        },
+        {
+            source:'/images/dream.jpg'
+        },
+        {
+            source:'/images/balassi.jpg'
+        },
+        {
+            source:'/images/yoga.jpg'
+        },
+        {
+            source:'/images/filmklub.jpg'
+        },
+        {
+            source:'/images/yoga2.jpg'
+        },
+        {
+            source:'/images/zzm.jpg'
+        },
+        {
+            source:'/images/triangle.jpg'
+        },
+        {
+            source:'/images/business.jpg'
+        },
+        {
+            source:'/images/rural.jpg'
+        },
+        {
+            source:'/images/wtf_sust.jpg'
+        },
+        {
+            source:'/images/muffin.jpg'
+        }
+    ];
+
+    $scope.refresh = function(){
+        angularGridInstance.gallery.refresh();
+    }
 
 });

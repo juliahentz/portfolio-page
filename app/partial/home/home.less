@@ -1,6 +1,5 @@
 .home-content-wrapper{
     margin:0;
-    overflow: auto;
 
     img{
         width: 100%;
@@ -9,6 +8,7 @@
     }
 
     .main-text{
+        overflow: hidden;
         h5{
             font-size: 5vw;
             font-weight: 100;
@@ -32,50 +32,103 @@
         text-align: center;
     }
 
-    .left-block{
-        width: 41vw;
-        margin-left: 7vw;
-        background-color: white;
-        position: relative;
-        top:-14vw;
-        margin-bottom: -18vw;
-        z-index: 100;
+    .main-content{
+        z-index: 1000;
 
-        .title{
-            margin-left: 3vw;
-            margin-right: 3vw;
-            font-weight: 200;
-            font-size: 2em;
-            letter-spacing: 2px;
-            color: #220e1a;
+        .left-block{
+            width: 41vw;
+            margin-left: 7vw;
+            background-color: white;
+            position: relative;
+            top:-14vw;
+            margin-bottom: -18vw;
+            z-index: 100;
+
+            .title{
+                margin-left: 3vw;
+                margin-right: 3vw;
+                font-weight: 200;
+                font-size: 2.5vw;
+                letter-spacing: 2px;
+                color: #220e1a;
+
+            }
+
+            #title2{
+                text-align: right;
+            }
 
         }
 
-        #title2{
-            text-align: right;
+        .right-block{
+            width: 41vw;
+            margin-right: 7vw;
+            background-color: #220e1a;
+            position: relative;
+            top:-31vw;
+            float: right;
+            margin-bottom: -400px;
+            z-index: 100;
+
+            .title{
+                margin-left: 3vw;
+                margin-right: 3vw;
+                font-weight: 200;
+                font-size: 2.5vw;
+                letter-spacing: 2px;
+                color: white;
+                text-align: right;
+            }
         }
 
+        .end-page-links{
+            padding-top: 40px;
+            overflow: visible;
+
+            .circle-logo{
+                margin-left: auto;
+                margin-right: auto;
+                width: 70px;
+                height: 70px;
+                border-radius: 35px;
+                border: solid 1px #220e1a;
+                text-align: center;
+                line-height: 70px;
+                color: #220e1a;
+                font-size: 1.4em;
+            }
+
+            .circle-logo:hover{
+                color:#76474f;
+            }
+
+            h3{
+                text-align: center;
+                top: 60vw;
+                font-size: 2vw;
+            }
+
+            h3:hover{
+                color:#76474f;
+            }
+
+            .square-container{
+                background-color: white;
+                width: 32vw;
+                height: 32vw;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                top: -12vw;
+                margin-bottom: -32vw;
+
+            }
+
+            .bottom-page-logo-line{
+                position: relative;
+                margin-bottom: -33vw;
+            }
+        }
     }
-
-    .right-block{
-        width: 41vw;
-        margin-right: 7vw;
-        background-color: #220e1a;
-        position: relative;
-        top:-350px;
-        float: right;
-        margin-bottom: -400px;
-
-        .title{
-            margin-left: 3vw;
-            margin-right: 3vw;
-            font-weight: 200;
-            font-size: 2em;
-            letter-spacing: 2px;
-            color: white;
-            text-align: right;
-        }
-    }
-
 }
 

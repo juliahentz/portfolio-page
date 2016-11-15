@@ -1,4 +1,4 @@
-angular.module('app', ['ui.bootstrap','ui.router','ngAnimate']);
+angular.module('app', ['ui.bootstrap','ui.router','ngAnimate','angularGrid','ui.tinymce']);
 
 angular.module('app').config(function($stateProvider, $urlRouterProvider) {
 

@@ -1,4 +1,38 @@
-<div class="col-md-12" ng-controller="ContactCtrl">
+<div class="col-md-1"></div>
+<div class="col-md-10 form-background">
+    <h5>Want to know more? Drop me an email!</h5>
+    <br/>
 
+    <div class="row">
+        <div class="col-sm-12">
+            <label>Email address</label>
+            <input type="text" class="form-control" ng-model="message.email">
+        </div>
+    </div>
+    <br/>
+
+    <div class="row">
+        <div class="col-sm-12">
+
+            <label>Subject</label>
+            <input type="text" class="form-control" ng-model="message.subject">
+        </div>
+    </div>
+    <br/>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <form method="post">
+                <textarea ui-tinymce ng-model="message.text"></textarea>
+            </form>
+        </div>
+    </div>
+    <br/>
+
+    <div class="btn btn-sm btn-default" ng-click="sendMail()">Send</div>
+    <br/>
+    <br/>
+    <br/>
 
 </div>
+<div class="col-md-1"></div>
