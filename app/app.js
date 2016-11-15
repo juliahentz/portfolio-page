@@ -52,6 +52,15 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
             }
         }
     });
+    $stateProvider.state('app.email-confirmation', {
+        url: 'email-confirmation',
+        views:{
+            'main@': {
+                templateUrl: 'partial/email-confirmation/email-confirmation.html',
+                controller: 'EmailConfirmationCtrl'
+            }
+        }
+    });
     /* Add New States Above */
     $urlRouterProvider.otherwise('/');
 

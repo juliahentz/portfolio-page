@@ -1,8 +1,10 @@
-angular.module('app').controller('ContactCtrl',function($scope,$window){
+angular.module('app').controller('ContactCtrl',function($scope,$window,contactService,$location){
 
     $scope.sendMail = function(){
-        $window.open("mailto:"+ $scope.message.email + "?subject=" + $scope.message.subject+"&body="+$scope.message.text,"_self");
-        console.log($scope.message);
+
+        contactService.sendMail($scope.message, function(data){
+            $location.path( 'app.email-confirmation' );
+        })
     };
 
     $scope.message = {
